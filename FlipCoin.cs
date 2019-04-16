@@ -2,7 +2,7 @@
 // <copyright file="FlipCoin.cs" company="BridgeLabz">
 // copyright @2019 
 // </copyright>
-//<creater name="Kaveri Tekawade"/>
+// <creater name="Kaveri Tekawade"/>
 //--------------------------------------------------------------------------------------------------------------------
 namespace Functional_Programs
 {
@@ -11,42 +11,40 @@ namespace Functional_Programs
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+
     /// <summary>
-    /// FlipCoin
+    /// Flips Coin multiple time and check win condition
     /// </summary>
     public class FlipCoin
     {
-        Random random = new Random();
+        /// <summary>
+        /// The random is a object of Random class
+        /// </summary>
+        private Random random = new Random();
+
         /// <summary>
         /// Flips the coin and check for the win condition
         /// </summary>
         public void FlipCoin1()
         {
-
             try
             {
-                //double result;
                 double heads = 0;
                 double tails = 0;
                 int n;
-
-
-                Console.WriteLine("enter the number to be flip the coin");
-                //Scanner sc= new Scanner(System.in);
-                //Console.ReadLine();
+                Console.WriteLine("enter the number of times the coin to be flips : ");
                 n = Convert.ToInt32(Console.ReadLine());
                 Random rd = new Random();
-                // Console.WriteLine(n);
                 if (n > 0)
                 {
                     for (int i = 0; i < n; i++)
                     {
-                        // result = random.Next(0, 1);
-
-                        double result = random.NextDouble();
+                        double result = this.random.NextDouble();
                         Console.WriteLine(result);
                         if (result <= 0.5)
+                        {
                             heads++;
+                        }
                         else
                         {
                             tails++;
@@ -57,7 +55,14 @@ namespace Functional_Programs
                     double percentTails = (n - heads) / n * 100;
                     Console.WriteLine("percentage of heads is: " + percentHeads);
                     Console.WriteLine("percentage of tails is: " + percentTails);
-                    Console.ReadLine();
+                    if (percentHeads > percentTails)
+                    {
+                        Console.WriteLine("Head Wins");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tail Wins");
+                    }
                 }
                 else
                 {
@@ -68,8 +73,6 @@ namespace Functional_Programs
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
     }
 }
-

@@ -1,8 +1,8 @@
 ﻿//--------------------------------------------------------------------------------------------------------------------
-// <copyright file="FlipCoin.cs" company="BridgeLabz">
+// <copyright file="Gambler.cs" company="BridgeLabz">
 // copyright @2019 
 // </copyright>
-//<creater name="Kaveri Tekawade"/>
+// <creater name="Kaveri Tekawade"/>
 //--------------------------------------------------------------------------------------------------------------------
 namespace Functional_Programs
 {
@@ -11,8 +11,9 @@ namespace Functional_Programs
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+
     /// <summary>
-    /// Gambler 
+    /// Gambler Play 
     /// </summary>
     public class Gambler
     {
@@ -35,46 +36,57 @@ namespace Functional_Programs
                 ////total number of bets made
                 int bets = 0;
                 ////total number of games won
-                int wins = 0;     
+                int wins = 0;
                 int loss = 0;
-
                 Random random = new Random();
-
                 ////repeat trials no of times
                 for (int t = 0; t < trials; t++)
                 {
-
                     ////One gambler's ruin simulation
                     int cash = stake;
                     while (cash > 0 && cash < goal)
                     {
                         bets++;
                         if (random.NextDouble() < 0.5)
+                        {
                             ////win $1
-                            cash++;     
+                            cash++;
+                        }
                         else
+                        {
                             ////lose $1
-                            cash--;     
+                            cash--;
+                        }
                     }
 
                     if (cash == goal)
+                    {
                         wins++;
+                    }
                     else
+                    {
                         loss++;
+                    }
                 }
 
                 ////print results
                 Console.WriteLine(wins + " wins of " + trials);
-                Console.WriteLine("Percent of games won = " + 100.0 * wins / trials);
-                Console.WriteLine("Percent of games loose = " + 100.0 * loss / trials);
-                double win = 100.0 * wins / trials;
-                double loose = 100.0 * loss / trials;
+                Console.WriteLine("Percent of games won = " + ((100.0 * wins) / trials));
+                Console.WriteLine("Percent of games loose = " + ((100.0 * loss) / trials));
+                double win = (100.0 * wins) / trials;
+                double loose = (100.0 * loss) / trials;
                 if (win == loose)
+                {
                     Console.WriteLine("Final Result : Its a tie...\n ");
+                }
                 else if (win > loose)
+                {
                     Console.WriteLine("Final Result : Gambler won...\n ");
+                }
                 else
+                {
                     Console.WriteLine("Final Result : Gambler loose...\n");
+                }
             }
             catch (Exception ex)
             {
@@ -83,4 +95,3 @@ namespace Functional_Programs
         }
     }
 }
-

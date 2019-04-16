@@ -11,26 +11,31 @@ namespace Functional_Programs
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+
     /// <summary>
     /// Any power of two
     /// </summary>
     public class PowerOfTwo
     {
-        int n;
+        /// <summary>
+        /// The n is the number taken from the user to calculate power of two
+        /// </summary>
+        private int n;
+
         /// <summary>
         /// Inputs the number from user to calculate nth power of two .
         /// </summary>
-        public void input()
+        public void Input()
         {
             try
             {
                 Console.WriteLine("Enter the value : ");
-                n = Convert.ToInt32(Console.ReadLine());
+                this.n = Convert.ToInt32(Console.ReadLine());
                 int power = 1;
-                Console.WriteLine("Powers of 2 that are less than 2^" + n);
-                if (n < 31)
+                Console.WriteLine("Powers of 2 that are less than 2^" + this.n);
+                if (this.n < 31)
                 {
-                    for (int i = 0; i <= n; i++)
+                    for (int i = 0; i <= this.n; i++)
                     {
                         Console.WriteLine("2^" + i + " = " + power);
                         power = power * 2;
@@ -41,7 +46,6 @@ namespace Functional_Programs
                     Console.WriteLine("please provide value less than 31");
                 }
             }
-
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
