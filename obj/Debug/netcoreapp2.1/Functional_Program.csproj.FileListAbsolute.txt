@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\bin\Debug\netcoreapp2.1\Functional_Program.deps.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\bin\Debug\netcoreapp2.1\Functional_Program.runtimeconfig.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\bin\Debug\netcoreapp2.1\Functional_Program.runtimeconfig.dev.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\bin\Debug\netcoreapp2.1\Functional_Program.dll
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\bin\Debug\netcoreapp2.1\Functional_Program.pdb
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.AssemblyInfo.cs
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.dll
+C:\Users\admin\source\repos\BridgeLabz_2019\Functional Program\Functional_Program\Functional_Program\obj\Debug\netcoreapp2.1\Functional_Program.pdb
